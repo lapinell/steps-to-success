@@ -1,0 +1,23 @@
+import React from 'react'
+import { Table, Button } from 'semantic-ui-react'
+
+class Step extends React.PureComponents {
+  render() {
+    return (
+      <Table.Row>
+        <Table.Cell>
+          {step.name}
+        </Table.Cell>
+        <Table.Cell>
+          {step.required}
+        </Table.Cell>
+        <Table.Cell>
+          <Button>Edit</Button>
+          <Button>Delete</Button>
+        </Table.Cell>
+      </Table.Row>
+    )
+  }
+}
+
+export default Step
